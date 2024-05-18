@@ -2,10 +2,9 @@ from summarizer_bot.logging import logger
 from summarizer_bot.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from summarizer_bot.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from summarizer_bot.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
-'''
 from summarizer_bot.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
 from summarizer_bot.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
-'''
+
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -41,7 +40,7 @@ except Exception as e:
         raise e
 
 
-'''
+
 STAGE_NAME = "Model Trainer stage"
 try: 
    logger.info(f"*******************")
@@ -54,8 +53,6 @@ except Exception as e:
         raise e
 
 
-
-
 STAGE_NAME = "Model Evaluation stage"
 try: 
    logger.info(f"*******************")
@@ -66,5 +63,3 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-
-        '''
